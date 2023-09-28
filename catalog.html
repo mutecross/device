@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Девайс - Каталог</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+<h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс».</h1>
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="images/icon/logo.svg" width="145" height="36" alt="Логотип Девайс">
+    </div>
+    <form class="search-form">
+      <input placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+      <button>Найти</button>
+    </form>
+    <ul class="personal">
+      <li class="personal__item">
+        <a class="personal__link" href="#">Войти</a>
+      </li>
+      <li class="personal__link">
+        <a href="#">Сравнить</a>
+      </li>
+      <li class="personal__link">
+        <a href="#">Корзина</a>
+      </li>
+    </ul>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav_link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav_link" href="#">Доставка</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav_link" href="#">Гарантия</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav_link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main">
+  <div>
+    <h1>Моноподы для селфи</h1>
+    <ul>
+      <li>
+        <a href="#">Главная</a>
+      </li>
+      <li>
+        <a href="#">Каталог товаров</a>
+      </li>
+      <li>
+        <a href="#">Моноподы для селфи</a>
+      </li>
+    </ul>
+  </div>
+  <section class="catalog">
+    <div class="container">
+      <div class="catalog__inner">
+        <div class="catalog__filter">
+          <h3>Фильтр:</h3>
+          <fieldset>
+            <h3>Стоимость</h3>
+            <div></div>
+            <div>от 0</div>
+            <div>до 5000</div>
+          </fieldset>
+          <fieldset>
+            <h3>Цвет</h3>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="color" value="black" checked>
+                  <span class="form__checkbox-text">Чёрный</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="color" value="white" checked>
+                  <span class="form__checkbox-text">Белый</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="color" value="blue">
+                  <span class="form__checkbox-text">Синий</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="color" value="red">
+                  <span class="form__checkbox-text">Красный</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__checkbox">
+                  <input class="form__checkbox-input" type="checkbox" name="color" value="pink">
+                  <span class="form__checkbox-text">Розовый</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <h3>Bluetooth</h3>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__radio">
+                  <input class="form__radio-input" type="radio" name="bluetooth-yes" checked>
+                  <span class="form__radio-text">Есть</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__radio">
+                  <input class="form__radio-input" type="radio" name="bluetooth-no">
+                  <span class="form__radio-text">Нет</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="catalog__sorting">
+          <div>Сортировка:</div>
+          <div>Популярные</div>
+          <div>Стрелки</div>
+        </div>
+        <div class="catalog__products">
+          <ul class="catalog__list">
+            <li class="catalog__item product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <img class="product-card__image" src="" alt="">
+                </picture>
+                <div class="product-card__text-wrapper">
+                  <p class="product-card__title">Любительская селфи-палка</p>
+                  <p class="product-card__price">500 ₽</p>
+                </div>
+                <div class="product-card__about">Подробнее</div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <img class="product-card__image" src="" alt="">
+                </picture>
+                <div class="product-card__text-wrapper">
+                  <p class="product-card__title">Профессиональная селфи-палка</p>
+                  <p class="product-card__price">1500 ₽</p>
+                </div>
+                <div class="product-card__about">Подробнее</div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <img class="product-card__image" src="" alt="">
+                </picture>
+                <div class="product-card__text-wrapper">
+                  <p class="product-card__title">Непотопляемая селфи-палка</p>
+                  <p class="product-card__price">2500 ₽</p>
+                </div>
+                <div class="product-card__about">Подробнее</div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a class="product-card__link" href="#">
+                <picture>
+                  <img class="product-card__image" src="" alt="">
+                </picture>
+                <div class="product-card__text-wrapper">
+                  <p class="product-card__title">Селфи-палка «Следуй за мной»</p>
+                  <p class="product-card__price">1500 ₽</p>
+                </div>
+                <div class="product-card__about">Подробнее</div>
+              </a>
+            </li>
+          </ul>
+          <button class="catalog__more">Загрузить ещё</button>
+          <div class="catalog__pagination">
+            <div class="catalog__pagination-back">Назад</div>
+            <ul class="catalog__pagination-numbers">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>...</li>
+              <li>15</li>
+            </ul>
+            <div class="catalog__pagination-next">Вперёд</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__logo">
+      <img src="images/icon/logo-footer.svg" width="145" height="36" alt="Логотип Девайс">
+    </div>
+    <div class="footer__contacts">Санкт-Петербург, набережная реки Карповки, 5, литера П.</div>
+    <div class="footer__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Доставка</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Гарантия</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__phone">
+      <a href="+78128121212">+7 (812) 812-12-12</a>
+    </div>
+    <div class="footer__line"></div>
+    <div class="footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__" href="#">tg</a>
+        </li>
+        <li class="social__item">
+          <a href="#">yt</a>
+        </li>
+        <li class="social__item">
+          <a href="#">twit</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright">HTML Academy</div>
+  </div>
+</footer>
+</body>
+</html>

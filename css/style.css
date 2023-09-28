@@ -3,3 +3,69 @@
 *::after {
   box-sizing: border-box;
 }
+
+:root {
+  --primary-bg-color: #ffffff;
+  --second-bg-color: #ffe17f;
+  --special-bg-color: #444444;
+  --light-bg-color: #f0f0f0;
+
+  --primary-text-color: #444444;
+  --second-text-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--primary-text-color);
+  background: var(--primary-bg-color);
+}
+
+.container {
+  width: 1000px;
+}
+
+.header {
+  background-color: var(--second-bg-color);
+}
+
+.main {
+
+}
+
+.slider {
+  background-image: linear-gradient( to bottom, var(--second-bg-color) 20%, var(--primary-bg-color) 20%);
+}
+
+.services {
+  background-color: var(--light-bg-color);
+}
+
+.subscribe {
+  background-color: var(--light-bg-color);
+}
+
+.footer {
+  background-color: var(--special-bg-color);
+ }

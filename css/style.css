@@ -11,7 +11,11 @@
   --light-bg-color: #f0f0f0;
 
   --primary-text-color: #444444;
-  --second-text-color: #ffffff;
+  --second-text-color: #000000;
+  --special-text-color: #ffffff;
+  --hover-text-color: #FFC700;
+
+  --button-focus-color: #AF4FFF;
 }
 
 .visually-hidden {
@@ -46,8 +50,71 @@
   width: 1000px;
 }
 
+.logo__link:hover {
+  opacity: 0.6;
+}
+
+.logo__link:active {
+  opacity: 0.3;
+}
+
 .header {
   background-color: var(--second-bg-color);
+}
+
+.personal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.personal__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--second-text-color);
+}
+
+.personal__link::before {
+  content: "";
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.personal__link--auth::before {
+  width: 13px;
+  height: 12px;
+  background-image: url("../images/icons/auth.svg");
+}
+
+.personal__link--auth--compare::before {
+  width: 10px;
+  height: 12px;
+  background-image: url("../images/icons/compare.svg");
+}
+
+.personal__link--auth--basket::before {
+  width: 31px;
+  height: 21px;
+  background-image: url("../images/icons/basket.svg");
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav__link {
+  color: var(--second-text-color);
+  text-decoration: none;
 }
 
 .main {
@@ -69,3 +136,58 @@
 .footer {
   background-color: var(--special-bg-color);
  }
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255, 0.3);
+}
+
+.social__link:hover {
+  background-color: var(--hover-text-color);
+}
+
+.social__link:focus {
+  outline: 2px solid var(--button-focus-color);
+}
+
+.social__link:active::before {
+  opacity: 0.3;
+}
+
+.social__link::before {
+  content: "";
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__link--telegram::before {
+  width: 14px;
+  height: 12px;
+  background-image: url("../images/icons/telegram.svg");
+}
+
+.social__link--youtube::before {
+  width: 16px;
+  height: 11px;
+  background-image: url("../images/icons/youtube.svg");
+}
+
+.social__link--vk::before {
+  width: 17px;
+  height: 10px;
+  background-image: url("../images/icons/vk.svg");
+}

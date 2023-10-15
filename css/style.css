@@ -29,6 +29,7 @@
   overflow: hidden;
 }
 
+/*--------------------------------------------------------*/
 .page {
   height: 100%;
 }
@@ -46,10 +47,13 @@
   background: var(--primary-bg-color);
 }
 
+/*--------------------------------------------------------*/
 .container {
-  width: 1000px;
+  width: 1160px;
+  margin: 0 auto;
 }
 
+/*--------------------------------------------------------*/
 .logo__link:hover {
   opacity: 0.6;
 }
@@ -58,10 +62,12 @@
   opacity: 0.3;
 }
 
+/*--------------------------------------------------------*/
 .header {
   background-color: var(--second-bg-color);
 }
 
+/*--------------------------------------------------------*/
 .personal {
   display: flex;
   justify-content: center;
@@ -104,11 +110,13 @@
   background-image: url("../images/icons/basket.svg");
 }
 
+/*--------------------------------------------------------*/
 .nav__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 0;
   list-style: none;
 }
 
@@ -117,6 +125,11 @@
   text-decoration: none;
 }
 
+.nav__link--secondary {
+  color: var(--special-text-color);
+}
+
+/*--------------------------------------------------------*/
 .main {
 
 }
@@ -133,15 +146,62 @@
   background-color: var(--light-bg-color);
 }
 
+/*--------------------------------------------------------*/
 .footer {
+  padding: 62px 0 61px;
   background-color: var(--special-bg-color);
+  color: var(--special-text-color);
  }
 
+.footer__inner {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__logo {
+  grid-column: span 3;
+}
+
+.footer__phone-link {
+  color: var(--special-text-color);
+}
+
+.footer__line {
+  display: flex;
+}
+
+.footer__line::before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+}
+
+.footer__copyright-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright-link::before {
+  content: "";
+  width: 115px;
+  height: 33px;
+  background-image: url("../images/icons/html-academy.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*--------------------------------------------------------*/
 .social__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 0;
   list-style: none;
 }
 

@@ -13,65 +13,72 @@
 <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс».</h1>
 <header class="header">
   <div class="container">
-    <div class="logo">
-      <a class="logo__link" href="index.html">
-        <img class="logo__icon" src="images/icons/logo.svg" width="145" height="36" alt="Логотип Девайс">
-      </a>
-
-    </div>
-    <form class="search-form">
-      <input placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-      <button>Найти</button>
-    </form>
-    <ul class="personal">
-      <li class="personal__item">
-        <a class="personal__link personal__link--auth" href="#">Войти</a>
-      </li>
-      <li class="personal__item">
-        <a class="personal__link personal__link--auth--compare" href="#">Сравнить</a>
-      </li>
-      <li class="personal__item">
-        <a class="personal__link personal__link--auth--basket" href="#">Корзина</a>
-      </li>
-    </ul>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="catalog.html">Каталог товаров</a>
+    <div class="header__inner">
+      <div class=" header__logo logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__icon" src="images/icons/logo.svg" width="145" height="36" alt="Логотип Девайс">
+        </a>
+      </div>
+      <form class="search-form">
+        <div class="search-form__input-content">
+          <input class="search-form__input" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+          <div class="search-form__icon"></div>
+        </div>
+        <button class="search-form__button">Найти</button>
+      </form>
+      <ul class="header__personal personal">
+        <li class="personal__item personal__item--first">
+          <a class="personal__link personal__link--auth" href="#">Войти</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Доставка</a>
+        <li class="personal__item">
+          <a class="personal__link personal__link--auth--compare" href="#">Сравнить</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Гарантия</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Контакты</a>
+        <li class="personal__item">
+          <a class="personal__link personal__link--auth--basket" href="#">Корзина</a>
         </li>
       </ul>
-    </nav>
+      <nav class="header__nav nav">
+        <div class="nav__catalog">
+          <button class="nav__link nav__link--catalog">Каталог товаров</button>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--current" href="#">Доставка</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Гарантия</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 <main class="main">
   <section class="slider">
     <div class="container">
-      <ul class="slider__list">
-        <li class="slider__item">
-          <h2 class="slider__title">Порхает как бабочка, жалит как пчела!</h2>
-          <p class="slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="slider__button" href="#">Подробнее</a>
-          <dl class="slider__characteristics">
-            <div>
-              <dt>800 м</dt>
-              <dd>Дальность полёта</dd>
-            </div>
-            <div>
-              <dt>50 м</dt>
-              <dd>Радиус поражения</dd>
-            </div>
-          </dl>
-        </li>
-      </ul>
+      <div class="slider__inner">
+        <ul class="slider__list">
+          <li class="slider__item">
+            <img class="slider__image" src="/images/content/product-1.png" width="560" height="560" alt="Квадрокоптер">
+            <h2 class="slider__title">Порхает как бабочка, жалит как пчела!</h2>
+            <p class="slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="slider__button" href="#">Подробнее</a>
+            <dl class="slider__characteristics">
+              <div>
+                <dt>800 м</dt>
+                <dd>Дальность полёта</dd>
+              </div>
+              <div>
+                <dt>50 м</dt>
+                <dd>Радиус поражения</dd>
+              </div>
+            </dl>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
   <section class="catalog">

@@ -7,10 +7,13 @@
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/rubik-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/rubik-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/raleway-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-<h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс».</h1>
+<h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
 <header class="header">
   <div class="container header__container">
     <a class="header__logo logo" href="index.html" aria-current="page">
@@ -36,7 +39,7 @@
             <span class="personal__link-text">Корзина</span>
           </a>
           <div class="popover-cart">
-            <h2 class="visually-hidden">Корзина.</h2>
+            <h2 class="visually-hidden">Корзина</h2>
             <ul class="popover-cart__list list-reset">
               <li class="popover-cart__item">
                 <a class="popover-cart__link" href="#">
@@ -120,7 +123,7 @@
 </header>
 <main class="main">
   <div class="container catalog-page-container">
-    <header class="catalog-header">
+    <div class="catalog-header">
       <h1 class="catalog-header-title title">Моноподы для селфи</h1>
       <ul class="breadcrumbs list-reset">
         <li class="breadcrumbs-item">
@@ -133,14 +136,14 @@
           <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html" aria-current="page">Моноподы для селфи</a>
         </li>
       </ul>
-    </header>
+    </div>
   </div>
   <section class="catalog">
     <div class="container catalog-container">
-      <h2 class="visually-hidden">Каталог товаров.</h2>
-      <section class="filter">
+      <h2 class="visually-hidden">Каталог товаров</h2>
+      <div class="filter">
         <h3 class="filter-title">Фильтр:</h3>
-        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="filter-form" id="filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter-group filter-group-range">
             <h4 class="filter-group-title">Стоимость</h4>
             <div class="filter-range">
@@ -148,7 +151,7 @@
                 <div class="range-bar" style="left: 0; right: 81px">
                   <div class="range-control range-control-min">
                     <button class="range-toggle toggle-min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                      <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
                     <label class="range-label" for="range-min">
                       <span>от</span>
@@ -157,7 +160,7 @@
                   </div>
                   <div class="range-control range-control-max">
                     <button class="range-toggle toggle-max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                      <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
                     <label class="range-label" for="range-max">
                       <span>до</span>
@@ -222,8 +225,8 @@
           </fieldset>
           <button class="button button--stroke filter-button" type="submit">Показать</button>
         </form>
-      </section>
-      <section class="results">
+      </div>
+      <div class="results">
         <div class="results-sort">
           <h3 class="sort-title">Сортировка:</h3>
           <select class="select-control" aria-label="Сортировка">
@@ -235,18 +238,18 @@
           <ul class="sort-order list-reset">
             <li class="sort-order-item">
               <a class="sort-order-link sort-order-ascend" href="#">
-                <span class="visually-hidden">По возрастанию.</span>
+                <span class="visually-hidden">По возрастанию</span>
               </a>
             </li>
             <li class="sort-order-item">
               <a class="sort-order-link sort-order-descend" href="#">
-                <span class="visually-hidden">По убыванию.</span>
+                <span class="visually-hidden">По убыванию</span>
               </a>
             </li>
           </ul>
         </div>
         <div class="results-wrapper">
-          <h3 class="visually-hidden">Результат фильтрации.</h3>
+          <h3 class="visually-hidden">Результат фильтрации</h3>
           <ul class="results-list list-reset">
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -320,7 +323,7 @@
             <a class="pagination-button pagination-button-next" href="#">Вперёд</a>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   </section>
 </main>
@@ -331,7 +334,7 @@
     </a>
     <div class="footer__content">
       <address class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-      <h3 class="visually-hidden">Навигация по сайту.</h3>
+      <h3 class="visually-hidden">Навигация по сайту</h3>
       <ul class="footer__nav nav list-reset">
         <li class="nav__item">
           <a class="footer__nav-link nav__link" href="#">Доставка</a>

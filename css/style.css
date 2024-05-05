@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Rubik";
-  src: url("../fonts/Rubik-Regular.woff2") format("woff2");
+  src: url("../fonts/rubik-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Rubik";
-  src: url("../fonts/Rubik-Bold.woff2") format("woff2");
+  src: url("../fonts/rubik-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/raleway-extra-bold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -320,7 +320,7 @@ img {
   padding: 8px 15px;
   width: 159px;
 
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1608,7 +1608,7 @@ img {
 .range-bar {
   position: absolute;
   height: 2px;
-
+  left: 0;
   background-color: #000000;
 }
 
